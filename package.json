@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --watchAll --verbose",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.5.1"
   }
 }
