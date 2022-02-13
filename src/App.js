@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Profile from './Profile.jsx';
+import Counter from './Counter';
 
 const App = () => {
-  return <Profile username="velopert" name="김민준" />;
+  return <Counter />;
 };
 export default App;
