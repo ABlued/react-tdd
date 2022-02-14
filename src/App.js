@@ -1,7 +1,7 @@
 import './App.css';
-import TodoApp from './TodoList/TodoApp';
+import DelayedToggle from './AxiosTestPractice/DelayedToggle';
 
 const App = () => {
-  return <TodoApp />;
+  return <DelayedToggle />;
 };
 export default App;
