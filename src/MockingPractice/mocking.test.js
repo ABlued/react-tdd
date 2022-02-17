@@ -13,3 +13,17 @@ mockFn.mockReturnValue('I am a mock!'); // I am a mock!
 
 mockFn.mockImplementation((name) => `I am ${name}`);
 console.log(mockFn('ablue'));
+
+// 비동기 함수의 resolve와 reject도 구현할 수 있다.
+
+test('async resolve test', async () => {
+  const asyncMock = jest.fn().mockResolvedValue(1);
+  const result = await asyncMock();
+  console.log(result); // 1
+});
+
+test('async reject test', async () => {
+  const asyncMock = jest.fn().mockRejectedValue(new Error('Async error'));
+  const result = await asyncMock();
+  console.log(result); // throws "Async error"
+});
